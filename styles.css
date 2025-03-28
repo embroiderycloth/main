@@ -29,8 +29,8 @@ body {
 
 .grid-item img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;  /* Ensures the image fills the container */
+    object-fit: contain;  /* Shows the full image without cropping */
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
