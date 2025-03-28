@@ -83,7 +83,7 @@ body {
 }
 
 .site-header .site-brand {
-    color: white;
+    color: black;
     font-size: 1.8em;
     font-weight: bold;
     text-decoration: none;
@@ -129,7 +129,7 @@ body {
     text-transform: uppercase;
     padding: 15px;
     display: block;
-    color: white;
+    color: black;
 }
 
 /* Hide the toggle button */
