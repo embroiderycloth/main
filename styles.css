@@ -57,7 +57,9 @@ body {
     display: none;
     font-size: 14px;
     pointer-events: none;
+    z-index: 10;
 }
+
 
 /* Responsive Adjustments */
 @media (max-width: 900px) {
