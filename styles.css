@@ -100,8 +100,8 @@ body {
 /* Navigation Links */
 .nav {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 10;
+    margin: 10;
 }
 
 .nav li {
