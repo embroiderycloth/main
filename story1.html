@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  /* Reset & Basic Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Colorful Banner */
+.banner {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Stories Container */
+.stories-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Story */
+.story {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.story img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.story-text {
+    padding: 20px;
+    flex: 1;
+}
+
+.story h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.story p {
+    font-size: 1em;
+    color: #666;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff758c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .story {
+        flex-direction: column;
+    }
+
+    .story img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embroidery Stories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Colorful Banner -->
+    <header class="banner">
+        <h1>Embroidery Stories</h1>
+        <p>Discover the stories behind each stitch.</p>
+    </header>
+
+    <!-- Story Section -->
+    <main class="stories-container">
+        
+        <article class="story">
+            <img src="story1.jpg" alt="Story 1">
+            <div class="story-text">
+                <h2>Story Title 1</h2>
+                <p>This is a beautiful embroidery that tells the story of heritage...</p>
+                <a href="fullstory1.html" class="read-more">Read More →</a>
+            </div>
+        </article>
+
+        <article class="story">
+            <img src="story2.jpg" alt="Story 2">
+            <div class="story-text">
+                <h2>Story Title 2</h2>
+                <p>Each thread is woven with tradition and memories...</p>
+                <a href="fullstory2.html" class="read-more">Read More →</a>
+            </div>
+        </article>
+
+        <article class="story">
+            <img src="story3.jpg" alt="Story 3">
+            <div class="story-text">
+                <h2>Story Title 3</h2>
+                <p>The artistry in this piece is inspired by nature’s beauty...</p>
+                <a href="fullstory3.html" class="read-more">Read More →</a>
+            </div>
+        </article>
+
+    </main>
+
+</body>
+</html>
