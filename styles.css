@@ -183,7 +183,7 @@ footer p {
     opacity: 0.7;
 }
 
-/* Adjusting Navbar Branding */
+/* Adjusting Navbar Branding 
 .navbar-brand {
     font-family: 'Josefin Sans', sans-serif; /* Use Aptos if available */
     font-size: 1.5rem; /* Adjust as needed */
@@ -193,6 +193,23 @@ footer p {
     text-align: center; /* Center align */
     color: #F8F8F8; /* Adjust color */
     margin-bottom: 30px; /* Adds spacing below */
+}*/
+
+.navbar-brand {
+    font-family: 'Josefin Sans', sans-serif; /* Use Aptos if available */
+    font-size: 1.5rem; /* Adjust as needed */
+    font-weight: 600;
+    letter-spacing: 6px; /* Adds spacing between letters */
+    line-height: 1.5; /* Controls space between the two lines */
+    text-align: center; /* Center align */
+    color: #F8F8F8; /* Adjust color */
+    margin-bottom: 30px; /* Adds spacing below */
+    text-decoration: none; /* Removes underline */
+    display: inline-block; /* Ensures proper spacing */
+}
+
+.navbar-brand:hover {
+    text-decoration: none; /* Prevent underline on hover */
 }
 
 /* Hide the toggle button */
