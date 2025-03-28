@@ -14,9 +14,9 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));  /* Adjust column sizes */
-    gap: 10px;
+    gap: 1px;
     width: 100%;
-    max-width: 900px;  /* Prevent it from being too wide */
+    max-width: 1300px;  /* Prevent it from being too wide */
 }
 
 /* Grid Items */
@@ -25,6 +25,10 @@ body {
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    aspect-ratio: 1 / 1;/* Ensures square shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid-item img {
@@ -52,9 +56,9 @@ body {
     pointer-events: none;
 }
 
-/* Make it more flexible for mobile screens */
+/* Mobile Adjustments */
 @media (max-width: 600px) {
     .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));  /* Smaller grid on mobile */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));  /* Adjusts for smaller screens */
     }
 }
