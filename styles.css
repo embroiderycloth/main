@@ -16,6 +16,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-adjusting columns */
     gap: 1px;
     width: 100vw; /* Full viewport width */
+    height: 100vh
     max-width: 100%; /* No restriction */
 }
 
