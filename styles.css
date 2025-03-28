@@ -49,7 +49,7 @@ h1 {
 
 .title {
     font-family: 'Josefin Sans', sans-serif; /* Use Aptos if available */
-    font-size: 1.8rem; /* Adjust as needed */
+    font-size: 1.2rem; /* Adjust as needed */
     letter-spacing: 6px; /* Adds spacing between letters */
     line-height: 1.5; /* Controls space between the two lines */
     margin-bottom: 30px; /* Adds spacing below */
