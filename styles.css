@@ -110,6 +110,12 @@ footer p {
     justify-content: center;
 }
 
+/* Positioning tweak: Ensure the popup has some spacing from the hovered item */
+.grid-item:hover .popup {
+    left: 100%; /* Moves popup to the right of the hovered image */
+    margin-left: 20px; /* Adds space between the image and the popup */
+}
+
 /* Images */
 .grid-item img {
     width: 100%;
@@ -125,19 +131,24 @@ footer p {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
 }
 
-/* Popup Box 
 .popup {
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    color: black;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 14px;
-    pointer-events: none; 
+    background: rgba(0, 0, 0, 0.85); /* Dark background for contrast */
+    color: white;
+    padding: 15px; /* Add padding for spacing inside */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Increase font size for readability */
+    pointer-events: none; /* Ensures it doesn't interfere with hover */
     display: none;
     z-index: 1000;
-    white-space: nowrap; /* Prevents text from breaking into multiple lines */
-}*/
+    white-space: normal; /* Allows text to wrap */
+    max-width: 250px; /* Ensures it doesn't stretch too far */
+    line-height: 1.5; /* Improves text readability */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3); /* Adds subtle shadow */
+    text-align: left; /* Align text nicely */
+}
+
+
 
 .popup {
     position: absolute;
