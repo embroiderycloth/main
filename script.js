@@ -1,13 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
     const gridItems = document.querySelectorAll(".grid-item");
-    const popup = document.getElementById("popup");
+    const popup = document.getElementById("popup"); // Use one popup reference
+
+    // Function to position the popup
+    function positionPopup(event) {
+        popup.style.top = `${event.clientY + 10}px`; // Position below the cursor
+        popup.style.left = `${event.clientX + 10}px`; // Position to the right of the cursor
+    }
 
     gridItems.forEach(item => {
         // Show popup on hover
         item.addEventListener("mouseenter", function (event) {
-            const description = item.getAttribute("data-author"); // Get description text
-            popup.textContent = description;
-            popup.style.display = "block";
+            const title = item.getAttribute("data-title");  // Get story title
+            const author = item.getAttribute("data-author");  // Get author name
+            
+            // Update popup content
+            popup.innerHTML = `<strong>${title}</strong><br><em>by ${author}</em>`;
+            popup.style.display = "block"; // Show popup
             positionPopup(event); // Position popup near cursor
         });
 
@@ -18,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Hide popup when mouse leaves
         item.addEventListener("mouseleave", function () {
-            popup.style.display = "none";
+            popup.style.display = "none"; // Hide popup
         });
 
         // Open detailed story page on click
@@ -29,25 +38,4 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-// Select all images with the class 'story-image'
-const images = document.querySelectorAll('.story-image');
-const popup = document.querySelector('.popup');
-
-// Function to display the popup
-function showPopup(event) {
-    // Get the story title and author from data attributes
-    const title = event.target.getAttribute('data-title');
-    const author = event.target.getAttribute('data-author');
-
-    // Set the content of the popup
-    popup.innerHTML = `<strong>${title}</strong><br><em>by ${author}</em>`;
-    
-    // Position the popup near the image
-    popup.style.top = `${event.clientY + 10}px`;
-    popup.style.left = `${event.clientX + 10}px`;
-
-    // Show the popup
-    popup.style.display = 'block';
-}
-    
 });
