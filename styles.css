@@ -16,7 +16,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));  /* Adjust column sizes */
     gap: 1px;
     width: 100%;
-    max-width: 1300px;  /* Prevent it from being too wide */
+
 }
 
 /* Grid Items */
