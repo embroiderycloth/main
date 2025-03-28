@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Noto Sans, sans-serif;
+    font-family: Aptos, Noto Sans, Calibri, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
@@ -69,6 +69,7 @@ footer p {
     gap: 3px;
     width: 90vw; /* Adjust to fit the screen width */
     max-width: 1300px; /* Prevent it from stretching too much */
+    background-color: #f8f8f8;
 }
 
 /* Grid Items */
@@ -121,7 +122,6 @@ footer p {
   width: 220px;
   height: 100vh;
   background-color: #bfccec; /* Your brand color */
-  color: white;
   /*padding-top: 20px;
   padding-left: 20px;*/
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
@@ -130,13 +130,12 @@ footer p {
 
 .sidebar-top {
     background-color: white;
-    padding: 20px;
     text-align: center;
 }
 
 .sidebar-top img {
-    width: 80%; /* Adjust logo size */
-    max-width: 150px;
+    width: 100%; /* Adjust logo size */
+    max-width: 500px;
 }
 
 .sidebar-bottom {
@@ -159,11 +158,11 @@ footer p {
   margin-bottom: 15px;
 }
 
-.site-header .site-logo {
+/*.site-header .site-logo {
   width: 80%;
   max-width: 120px;
   margin-bottom: 10px;
-}
+}*/
 
 /* Navigation Links */
 .nav {
