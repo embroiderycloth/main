@@ -154,7 +154,7 @@ footer p {
 .sidebar-top {
     background-color: white;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 0;
     border-bottom: 3px solid #8a9ab8; /* A muted version of your brand color */
 }
 
