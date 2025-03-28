@@ -1,33 +1,60 @@
+/* Reset & Basic Styles */
 body {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    background-color: #f8f8f8;
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
+/* Responsive Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));  /* Adjust column sizes */
+    gap: 10px;
+    width: 100%;
+    max-width: 900px;  /* Prevent it from being too wide */
 }
 
+/* Grid Items */
 .grid-item {
     position: relative;
+    overflow: hidden;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .grid-item img {
     width: 100%;
     height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
+/* Hover Effect */
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* Popup Box */
 .popup {
-    display: none;
     position: absolute;
-    background-color: white;
-    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
     padding: 10px;
-    z-index: 10;
+    border-radius: 5px;
+    display: none;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+/* Make it more flexible for mobile screens */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));  /* Smaller grid on mobile */
+    }
 }
