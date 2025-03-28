@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 body {
     font-family: Aptos, Noto Sans, Calibri, sans-serif;
     margin: 0;
@@ -15,12 +16,17 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
 }
 
 /* Main content */
 main {
   margin-left: 240px; /* Space for sidebar */
   padding: 40px 60px;
+}
+
+.main-content {
+    flex: 1;
 }
 
 /*About*/
