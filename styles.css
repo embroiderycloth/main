@@ -4,39 +4,38 @@ html, body {
     padding: 0;
     height: 100vh;
     width: 100vw;
-   /* overflow: hidden;  Prevents scrolling */
+    overflow: hidden; /* Prevent scrolling */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #CFD4E6
 }
 
 /* Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
-    grid-template-rows: repeat(3, 1fr); /* Always 3 rows */
-    gap: 1px;
-    width: 100vw; /* Full screen width */
-    height: 100vh; /* Full screen height */
+    grid-template-columns: repeat(3, auto); /* Adjust column size to fit content */
+    grid-template-rows: repeat(3, auto); /* Adjust row size to fit content */
+    gap: 0px; /* Remove space between images */
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 /* Grid Items */
 .grid-item {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 /* Images */
 .grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensures full image is shown */
-    border-radius: 8px;
+    max-width: 2048px; /* Max image width */
+    max-height: 1526px; /* Max image height */
+    width: calc(100vw / 3); /* Each image takes up 1/3 of screen width */
+    height: calc(100vh / 3); /* Each image takes up 1/3 of screen height */
+    object-fit: contain; /* Ensure the full image is visible */
+    border-radius: 0; /* Remove any unwanted space from border radius */
     transition: transform 0.3s ease-in-out;
 }
 
