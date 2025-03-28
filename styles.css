@@ -169,7 +169,7 @@ footer p {
 .sidebar-bottom {
     background-color: #bfccec;
     flex-grow: 1;
-    padding: 20px;
+    padding: 10px 20px 20px 20px; /* Adjust the top padding to 10px */
 }
 
 .site-header {
