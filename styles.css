@@ -33,7 +33,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-h1 .title{
+.title h1 {
     font-family: 'Josefin Sans', sans-serif; /* Use Aptos if available */
     font-size: 2rem; /* Adjust as needed */
     letter-spacing: 6px; /* Adds spacing between letters */
