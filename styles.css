@@ -122,8 +122,8 @@ footer p {
   height: 100vh;
   background-color: #bfccec; /* Your brand color */
   color: white;
-  padding-top: 20px;
-  padding-left: 20px;
+  /*padding-top: 20px;
+  padding-left: 20px;*/
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
