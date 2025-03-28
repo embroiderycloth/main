@@ -1,42 +1,30 @@
+/* Reset & Basic Styles */
 html, body {
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden; /* Prevents scrolling */
-    height: 100vh; /* Makes sure everything fits within the viewport */
-}
-
-/* Reset & Basic Styles 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f8f8f8;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
 }
-*/
 
-/* Responsive Grid Layout */
+/* Grid Layout */
 .grid-container {
     display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));  Auto-adjusting columns */
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    /*width: 100vw; Full viewport width */
-    height: 100vh
-    max-width: 100%; /* No restriction */
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+    grid-template-rows: repeat(3, 1fr); /* Always 3 rows */
+    gap: 5px;
+    width: 100vw; /* Full screen width */
+    height: 100vh; /* Full screen height */
 }
 
 /* Grid Items */
 .grid-item {
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    /*aspect-ratio: 1 / 1;  Keeps grid items square */
-    aspect-ratio: 683 / 509;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +34,7 @@ body {
 .grid-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures full coverage */
+    object-fit: contain; /* Ensures full image is shown */
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
@@ -54,23 +42,4 @@ body {
 /* Hover Effect */
 .grid-item:hover {
     transform: scale(1.05);
-}
-
-/* Popup Box */
-.popup {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    display: none;
-    font-size: 14px;
-    pointer-events: none;
-}
-
-/* Mobile Adjustments */
-@media (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust for small screens */
-    }
 }
