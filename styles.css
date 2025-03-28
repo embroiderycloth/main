@@ -1,4 +1,11 @@
-/* Reset & Basic Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling */
+    height: 100vh; /* Makes sure everything fits within the viewport */
+}
+
+/* Reset & Basic Styles 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -10,6 +17,7 @@ body {
     min-height: 100vh;
     overflow: hidden;
 }
+*/
 
 /* Responsive Grid Layout */
 .grid-container {
