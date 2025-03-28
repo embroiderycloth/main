@@ -29,10 +29,25 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+// Select all images with the class 'story-image'
+const images = document.querySelectorAll('.story-image');
+const popup = document.querySelector('.popup');
 
-    // Function to position the popup dynamically
-    function positionPopup(event) {
-        popup.style.left = `${event.pageX + 10}px`; // Position near cursor
-        popup.style.top = `${event.pageY + 10}px`;
-    }
+// Function to display the popup
+function showPopup(event) {
+    // Get the story title and author from data attributes
+    const title = event.target.getAttribute('data-title');
+    const author = event.target.getAttribute('data-author');
+
+    // Set the content of the popup
+    popup.innerHTML = `<strong>${title}</strong><br><em>by ${author}</em>`;
+    
+    // Position the popup near the image
+    popup.style.top = `${event.clientY + 10}px`;
+    popup.style.left = `${event.clientX + 10}px`;
+
+    // Show the popup
+    popup.style.display = 'block';
+}
+    
 });
