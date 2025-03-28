@@ -295,6 +295,7 @@ footer p {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    padding-left: 220px;
 }
 
 /* Individual Story */
