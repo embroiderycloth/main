@@ -8,20 +8,20 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 /* Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto; /* Ensures 3 tight columns */
-    grid-template-rows: auto auto auto; /* Ensures 3 tight rows */
-    gap: 1px; 
-    background-color: #bfccec
+    grid-template-columns: repeat(3, 683px); /* Each column is exactly the image width */
+    grid-template-rows: repeat(3, 509px); /* Each row is exactly the image height */
+    gap: 0px; /* No gaps between images */
 }
 
 /* Grid Items */
 .grid-item {
+    width: 683px; /* Exact width of images */
+    height: 509px; /* Exact height of images */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,11 +30,10 @@ html, body {
 
 /* Images */
 .grid-item img {
-    width: calc(100vw / 3);  /* Divide the viewport into 3 columns */
-    height: calc(100vh / 3); /* Divide the viewport into 3 rows */
-    max-width: 2048px;  /* Ensure images do not exceed their max size */
-    max-height: 1526px;
-    object-fit: contain; /* Keep full image visible */
+    width: 100%; /* Fit exactly into the grid item */
+    height: 100%; /* Fit exactly into the grid item */
+    object-fit: contain; /* Ensures full image is visible */
+    border-radius: 0; /* No extra spacing from rounded edges */
     transition: transform 0.3s ease-in-out;
 }
 
