@@ -112,6 +112,7 @@ footer p {
 }
 
 /* Header (Sidebar) */
+
 .sidebar {
   position: fixed;
   left: 0;
@@ -124,6 +125,23 @@ footer p {
   padding-left: 20px;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
   z-index: 10;
+}
+
+.sidebar-top {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar-top img {
+    width: 80%; /* Adjust logo size */
+    max-width: 150px;
+}
+
+.sidebar-bottom {
+    background-color: #bfccec;
+    flex-grow: 1;
+    padding: 20px;
 }
 
 .site-header {
