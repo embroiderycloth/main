@@ -158,12 +158,6 @@ footer p {
   margin-bottom: 15px;
 }
 
-/*.site-header .site-logo {
-  width: 80%;
-  max-width: 120px;
-  margin-bottom: 10px;
-}*/
-
 /* Navigation Links */
 .nav {
     list-style: none;
@@ -192,12 +186,12 @@ footer p {
 /* Adjusting Navbar Branding */
 .navbar-brand {
     font-family: 'Josefin Sans', sans-serif; /* Use Aptos if available */
-    font-size: 1rem; /* Adjust as needed */
-    font-weight: 400;
+    font-size: 1.5rem; /* Adjust as needed */
+    font-weight: 600;
     letter-spacing: 6px; /* Adds spacing between letters */
     line-height: 1.5; /* Controls space between the two lines */
     text-align: center; /* Center align */
-    color: #080808; /* Adjust color */
+    color: #F8F8F8; /* Adjust color */
     margin-bottom: 30px; /* Adds spacing below */
 }
 
