@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header (Sidebar) */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #bfccec; /* Your brand color */
+  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.site-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.site-header .site-brand {
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.site-header .site-logo {
+  width: 80%;
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  margin: 20px 0;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav li a:hover {
+  opacity: 0.7;
+}
+
+/* Main content */
+main {
+  margin-left: 240px; /* Space for sidebar */
+  padding: 40px 60px;
+}
+
+.about-section {
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  main {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="sidebar">
+      <div class="site-header">
+        <a href="./index.html" class="site-brand">
+          <img class="site-logo" src="./assets/images/logo.svg" alt="Logo">
+          Embroidery Stories
+        </a>
+      </div>
+      <ul class="nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="container">
+        <h1>About Embroidery Stories</h1>
+        <p>
+          Welcome to Embroidery Stories! We bring the art of embroidery to life, combining traditional techniques with modern creativity. Our mission is to preserve the beauty of embroidery while sharing stories and passion through every stitch.
+        </p>
+        
+        <h2>Our Journey</h2>
+        <p>
+          Started as a small hobby, Embroidery Stories has evolved into a community that celebrates the art of embroidery. From humble beginnings to an online platform where we connect with fellow enthusiasts, we've come a long way. Each piece tells a story, woven through thread and creativity.
+        </p>
+
+        <h2>Our Values</h2>
+        <p>
+          At Embroidery Stories, we value craftsmanship, creativity, and storytelling. We believe in sustainability and source materials ethically. Every design is crafted with care, and our aim is to inspire people to embrace the art of embroidery, whether as a hobby or as a professional craft.
+        </p>
+        
+        <h2>Meet the Team</h2>
+        <p>
+          Our team is a diverse group of passionate individuals who share a love for art and embroidery. From designers to craftsmen, each member brings something unique to the table. We work together to bring stories to life, one stitch at a time.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Embroidery Stories. All rights reserved.</p>
+  </footer>
+</body>
+</html>
