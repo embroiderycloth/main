@@ -1,33 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-  /* Reset & Basic Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
-}
-
-/* Colorful Banner */
-.banner {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    border-radius: 8px;
-}
-
-.banner h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.banner p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
 
 /* Stories Container */
 .stories-container {
@@ -99,13 +72,24 @@ body {
     <title>Embroidery Stories</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-    <!-- Colorful Banner -->
-    <header class="banner">
-        <h1>Embroidery Stories</h1>
-        <p>Discover the stories behind each stitch.</p>
-    </header>
+<body>
+  <header>
+    <nav class="sidebar">
+      <div class="site-header">
+        <a href="./index.html" class="site-brand">
+          <img class="site-logo" src="logo.png" alt="Logo">
+          Table Cloth
+        </a>
+        <p>Discover the stories behind every stitch.</p>
+      </div>
+      <ul class="nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./story1.html">Stories</a></li>
+      </ul>
+    </nav>
+  </header>
 
     <!-- Story Section -->
     <main class="stories-container">
