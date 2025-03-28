@@ -8,19 +8,14 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #003366
 }
 
 /* Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Evenly spaced 3 columns */
-    grid-template-rows: repeat(3, 1fr); /* Evenly spaced 3 rows */
-    gap: 0px; /* No gaps between images */
-    width: calc(2048px * 3 / 3); /* Ensures the grid is as wide as 3 images */
-    height: calc(1526px * 3 / 3); /* Ensures the grid is as tall as 3 images */
-    max-width: 100vw; /* Prevents overflow */
-    max-height: 100vh; /* Prevents overflow */
+    grid-template-columns: auto auto auto; /* Ensures 3 tight columns */
+    grid-template-rows: auto auto auto; /* Ensures 3 tight rows */
+    gap: 0px; /* NO gaps between images */
 }
 
 /* Grid Items */
@@ -33,12 +28,11 @@ html, body {
 
 /* Images */
 .grid-item img {
-    max-width: 100%; /* Max width is 100% of its cell */
-    max-height: 100%; /* Max height is 100% of its cell */
-    width: calc(100vw / 3); /* Each image takes up 1/3 of screen width */
-    height: calc(100vh / 3); /* Each image takes up 1/3 of screen height */
-    object-fit: contain; /* Ensures full image is visible without cropping */
-    border-radius: 0; /* Remove any unwanted space */
+    width: calc(100vw / 3);  /* Divide the viewport into 3 columns */
+    height: calc(100vh / 3); /* Divide the viewport into 3 rows */
+    max-width: 2048px;  /* Ensure images do not exceed their max size */
+    max-height: 1526px;
+    object-fit: contain; /* Keep full image visible */
     transition: transform 0.3s ease-in-out;
 }
 
