@@ -191,12 +191,15 @@ footer p {
 
 /* Adjusting Navbar Branding */
 .navbar-brand {
-    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif; /* Use Aptos if available */
+    font-size: 3rem; /* Adjust as needed */
     font-weight: 700;
     text-transform: uppercase;
-    padding: 15px;
-    display: block;
-    color: black;
+    letter-spacing: 6px; /* Adds spacing between letters */
+    line-height: 1.2; /* Controls space between the two lines */
+    text-align: center; /* Center align */
+    color: #000; /* Adjust color */
+    margin-bottom: 30px; /* Adds spacing below */
 }
 
 /* Hide the toggle button */
