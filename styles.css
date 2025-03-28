@@ -8,14 +8,17 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #BFCCEC; /* Set background color */
 }
 
 /* Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto; /* Ensures 3 tight columns */
-    grid-template-rows: auto auto auto; /* Ensures 3 tight rows */
-    gap: 0px; /* NO gaps between images */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-template-rows: repeat(3, 1fr); /* Three equal rows */
+    gap: 0px; /* No gaps between images */
+    width: 100vw;
+    height: 100vh;
 }
 
 /* Grid Items */
@@ -23,20 +26,14 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
-/* Images */
-.grid-item img {
-    width: calc(100vw / 3);  /* Divide the viewport into 3 columns */
-    height: calc(100vh / 3); /* Divide the viewport into 3 rows */
-    max-width: 2048px;  /* Ensure images do not exceed their max size */
-    max-height: 1526px;
-    object-fit: contain; /* Keep full image visible */
-    transition: transform 0.3s ease-in-out;
+/* Image Alignment */
+.grid-item:nth-child(3n + 1) img { /* Left column */
+    object-position: left;
 }
 
-/* Hover Effect */
-.grid-item:hover {
-    transform: scale(1.05);
-}
+.grid-item:nth-child(3n + 3) img { /* Right*
