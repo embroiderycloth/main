@@ -211,6 +211,12 @@ footer p {
 .navbar-brand:hover {
     text-decoration: none; /* Prevent underline on hover */
 }
+.navbar a {
+    text-decoration: none;
+}
+.navbar a:hover {
+    text-decoration: none;
+}
 
 /* Hide the toggle button */
 .navbar-toggle {
