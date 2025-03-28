@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+/* Make sure the full page height is used */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 body {
     font-family: Aptos, Noto Sans, Calibri, sans-serif;
@@ -81,14 +87,16 @@ p {
   margin-bottom: 20px;
 }
 
+/* Footer Styling */
 footer {
-    background-color: #eceff4; /* Muted brand color (adjust if needed) */
+    background-color: #eceff4; /* Muted brand color */
     color: #333; /* Darker text for contrast */
     padding: 10px 0;
-    padding-left:220px;
+    padding-left: 220px;
     text-align: center;
     font-size: 1em;
     width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom */
 }
 
 
