@@ -13,7 +13,8 @@ body {
 /* Responsive Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-adjusting columns */
+    /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));  Auto-adjusting columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 1px;
     width: 100vw; /* Full viewport width */
     height: 100vh
