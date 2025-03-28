@@ -5,17 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     gridItems.forEach(item => {
         // Show popup on hover
         item.addEventListener("mouseenter", function (event) {
-            const author = item.getAttribute("data-author"); // Get the author name
-            popup.textContent = author;
+            const description = item.getAttribute("data-author"); // Get description text
+            popup.textContent = description;
             popup.style.display = "block";
-            popup.style.left = `${event.pageX + 10}px`; // Position near cursor
-            popup.style.top = `${event.pageY + 10}px`;
+            positionPopup(event); // Position popup near cursor
         });
 
         // Move popup with cursor
         item.addEventListener("mousemove", function (event) {
-            popup.style.left = `${event.pageX + 10}px`;
-            popup.style.top = `${event.pageY + 10}px`;
+            positionPopup(event);
         });
 
         // Hide popup when mouse leaves
@@ -31,4 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    // Function to position the popup dynamically
+    function positionPopup(event) {
+        popup.style.left = `${event.pageX + 10}px`; // Position near cursor
+        popup.style.top = `${event.pageY + 10}px`;
+    }
 });
