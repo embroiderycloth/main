@@ -125,7 +125,7 @@ footer p {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
 }
 
-/* Popup Box */
+/* Popup Box 
 .popup {
     position: absolute;
     background: rgba(0, 0, 0, 0.8);
@@ -133,10 +133,26 @@ footer p {
     padding: 8px 12px;
     border-radius: 5px;
     font-size: 14px;
-    pointer-events: none; /* Ensures it doesn't interfere with hover */
+    pointer-events: none; 
     display: none;
     z-index: 1000;
     white-space: nowrap; /* Prevents text from breaking into multiple lines */
+}*/
+
+/* Popup Box */
+.popup {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    pointer-events: none; /* Ensures it doesn't interfere with hover */
+    display: none;
+    z-index: 1000;
+    white-space: normal; /* Allow wrapping of text */
+    max-width: 250px; /* Limit the width */
+    word-wrap: break-word; /* Ensure long words wrap */
 }
 
 /* Header (Sidebar) */
