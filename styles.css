@@ -8,7 +8,6 @@
 
 /* Make sure the full page height is used */
 html, body {
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
