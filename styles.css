@@ -64,6 +64,7 @@ footer p {
 /* Grid Layout with 3 Columns */
 .grid-container {
     display: grid;
+    padding-left: 220px;
     grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
     gap: 3px;
     width: 90vw; /* Adjust to fit the screen width */
