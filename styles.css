@@ -8,13 +8,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: #bfccec
 }
 
 /* Grid Layout with 3 Columns */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
-    gap: 10px;
+    gap: 3px;
     width: 90vw; /* Adjust to fit the screen width */
     max-width: 1300px; /* Prevent it from stretching too much */
 }
@@ -36,7 +37,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures images cover the grid cell while keeping their aspect ratio */
-    border-radius: 8px;
+    border-radius: 1px;
     transition: transform 0.3s ease-in-out;
 }
 
