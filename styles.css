@@ -21,7 +21,6 @@ body {
 
 /* Grid Items */
 .grid-item {
-    position: relative;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
