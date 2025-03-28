@@ -8,6 +8,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #bfccec
 }
 
 /* Grid Layout */
@@ -15,7 +16,7 @@ html, body {
     display: grid;
     grid-template-columns: auto auto auto; /* Ensures 3 tight columns */
     grid-template-rows: auto auto auto; /* Ensures 3 tight rows */
-    gap: 0px; /* NO gaps between images */
+    gap: 1px; 
 }
 
 /* Grid Items */
