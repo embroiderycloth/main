@@ -98,7 +98,7 @@ footer {
 .grid-container {
     display: grid;
     padding-left: 220px;
-    padding-top: 20px;
+    padding-top: 50px;
     grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
     gap: 3px;
     width: 90vw; /* Adjust to fit the screen width */
