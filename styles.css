@@ -89,8 +89,11 @@ footer {
     padding-left: 220px;
     text-align: center;
     font-size: 1em;
-    width: 100%;
     margin-top: auto; /* Pushes footer to the bottom */
+    width: 100vw; /* Ensures it spans the full viewport width */
+    position: relative;
+    left: 0;
+}
 }
 
 
